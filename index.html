@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RIVORA JEWELS — Elegance That Lasts</title>
+  <meta name="description" content="RIVORA JEWELS — elegant jewellery for every occasion.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <a class="logo" href="#">RIVORA <span>JEWELS</span></a>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#shop">Shop</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="cart-btn" onclick="openCart()">🛍 Cart <b id="cartCount">0</b></button>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-content">
+    <p class="eyebrow">TIMELESS • ELEGANT • RIVORA</p>
+    <h1>Jewellery that<br><em>tells your story.</em></h1>
+    <p>Discover elegant pieces designed to make every moment shine.</p>
+    <a class="gold-btn" href="#shop">SHOP COLLECTION</a>
+  </div>
+</section>
+
+<section class="categories">
+  <div><span>💍</span><h3>Rings</h3></div>
+  <div><span>✨</span><h3>Earrings</h3></div>
+  <div><span>📿</span><h3>Necklaces</h3></div>
+  <div><span>⌁</span><h3>Bracelets</h3></div>
+</section>
+
+<section id="shop" class="shop">
+  <div class="section-head">
+    <p class="eyebrow">OUR COLLECTION</p>
+    <h2>Featured Jewellery</h2>
+    <p>Elegant pieces for everyday moments and special occasions.</p>
+  </div>
+  <div id="products" class="product-grid"></div>
+</section>
+
+<section id="about" class="about">
+  <div>
+    <p class="eyebrow">THE RIVORA STORY</p>
+    <h2>Made to shine.<br>Made for you.</h2>
+  </div>
+  <p>RIVORA JEWELS brings together timeless elegance and modern design. Our collection is created for people who want jewellery that feels special, looks beautiful and becomes part of their story.</p>
+</section>
+
+<section id="contact" class="contact">
+  <p class="eyebrow">GET IN TOUCH</p>
+  <h2>Have a question?</h2>
+  <p>Message us on WhatsApp for product details, orders and support.</p>
+  <a class="gold-btn" href="https://wa.me/919999999999" target="_blank">WHATSAPP US</a>
+</section>
+</main>
+
+<footer>
+  <div class="logo">RIVORA <span>JEWELS</span></div>
+  <p>© 2026 RIVORA JEWELS. All rights reserved.</p>
+</footer>
+
+<div id="cartModal" class="modal">
+  <div class="cart-box">
+    <button class="close" onclick="closeCart()">×</button>
+    <h2>Your Cart</h2>
+    <div id="cartItems"></div>
+    <div class="total">Total: ₹<span id="cartTotal">0</span></div>
+    <button class="gold-btn full" onclick="checkout()">CHECKOUT</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
